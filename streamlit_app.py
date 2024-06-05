@@ -6,7 +6,7 @@ __import__('pysqlite3')
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 from main import query
 
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+openai.api_key = st.secrets.openai_key
 MODEL_ENGINE = "gpt-3.5-turbo"
 
 st.title("🤖 Chatbot App")
