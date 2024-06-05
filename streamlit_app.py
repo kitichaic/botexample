@@ -4,8 +4,8 @@ import openai
 #import sys
 #__import__('pysqlite3') 
 #sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-from main import query
-
+#from main import query
+import main
 openai.api_key = st.secrets.openai_key
 MODEL_ENGINE = "gpt-3.5-turbo"
 
